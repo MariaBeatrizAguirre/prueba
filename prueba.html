@@ -8,13 +8,15 @@
             h2   {color: rgb(7, 7, 7);}
             h3  {color: rgb(20, 20, 20);text-align: center;}
             h4   {color: rgb(7, 7, 7);}
-            p    {color: rgb(27, 25, 25); }
+            p    {color: rgb(27, 25, 25); 
+            }
             .myHeader {
                 border: 1px outset rgb(24, 22, 22);
                 background-color: rgba(173, 216, 230, 0.014);
                 text-align: left;
                 padding-right: 1em;
                 border-radius: 5px;
+                size: auto;
                 }
             .myDiv {
                 border: 1px outset rgb(24, 22, 22);
@@ -23,446 +25,307 @@
                 padding-right: 1em;
                 border-radius: 5px;
                 }
-
+           
             .my {
-                
                 border: 1px outset rgb(24, 22, 22);
                 background-color: lightblue;
                 text-align: left;
                 padding-right: 1em;
                 border-radius: 5px;
-                
+                top: 200;              
             }
+            .my1 {
+                border: 1px outset rgb(24, 22, 22);
+                background-color: lightblue;
+                text-align: left;
+                padding-right: 1em;
+                border-radius: 5px;
+                top: 200;              
+            }
+            
             .foto{
                   position:absolute;
                   height:200px;
                   width:200px;
-                  top: 200px;
+                  top: 300px;
                   left : 40px;
-                  z-index: 1;
+                  
                 }
-
-            .fondo
-            {
+                .boton1{
+                  position:absolute;
+                  height:10px;
+                  width:100px;
+                  top: 10px;
+                  right : 5px;
+                  
+                }
+                .boton2{
+                  position:absolute;
+                  height:100px;
+                  width:100px;
+                  top: 300px;
+                  left : 200px;
+                  
+                }
+                .boton3{
+                  position:absolute;
+                  height:100px;
+                  width:100px;
+                  top: 450px;
+                  left : 250px;
+                }
+                .boton4{
+                  position:absolute;
+                  height:100px;
+                  width:100px;
+                  top: 450px;
+                  left : 620px;
+                }
+                .boton5{
+                  position:absolute;
+                  height:100px;
+                  width:100px;
+                  top: 450px;
+                  left : 670px;
+                }
+            .fondo {
               position:absolute;
               height:300px;
               width:300px;
               z-index: -1;
-}
+              }
+              .redondo{
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                right: 100;
+              }
+            .presenta{
+              background-color: lightblue;
+                text-align: left;
+                padding-right: 1em;
+                border-radius: 5px;
+                left: 200px;     
+              }
+            #contenedor {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+
+            #contenedor > div {
+              width: 50%;
+            }
+              
             </style>
+           
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+            <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script--> 
     </head>
     <body >
         <div class="myHeader">
             <table style="width:100%">
                 <tr>
                   <td> </td>
-                  <td> <img src="logo1.png "  width=150px height=150px aling="left" class="rounded-circle"></td>
-                  <td><img src="logo2.png "  ></td>
+                  <td> <img src="logo1.png "  width=100px height=100px aling="left" class="rounded-circle"></td>
+                  <td><img src="logo2.png " width=180px height=120px ></td>
                   <td> </td>
                   <td> 
                   <a href=" https://www.facebook.com/mbaguirre">
-                    <img src="facebook.png "  width=100px height=100px >
+                    <img src="facebook.png "  width=75 px height=75px >
                     </a></td>
-                  <td></td>
+                  <td><button type="button" class="btn btn-primary">Iniciar seción</button></td>
                   <td> </td>
                 </tr>
-                
               </table>
-            
         </div>
-        <div style="position: relative; left: 0; top: 0;" class="myDiv">
-             <img src="ciudad.png "  width=1598px height=300px aling="center" class="rounded" class='fondo'/>
-             <img src="yo.png"  width=300 height=300  class='foto'/>
-             
-         </div>          
-         <div class="my">
-          <table style="width:100%">
-            <tr>
-              <td style="width:30px"><p>  </p> </td>
-              <td style="height:80px"> <h2> </h2> </td>
-              <td style="width:80px"><p>  </p> </td>
-               <td><p>  </p> </td>
-            </tr>
-            <tr>
-              <td style="height:30px"><p>  </p> </td>
-              <td style="height:70px"> <h2>Maria Beatriz Aguirre</h2> </td>
-              <td><p>  </p> </td>
-              <td><h4>   Presentación</h4> </td>
-            </tr>
-            <tr >
-              <td > </td>
-              <td style="height:30px" > <h4>Full Stack Developer Jr</h4> </td>
-              <td><p>  </p> </td>
-              <td ><h5> 
-                Desde muy joven siento fascinación por la tecnología, sus avances y sus aplicaciones.
-              </h5> </td>
-            </tr>
-            <tr >
-              <td > </td>
-              <td style="height:30px" > <h4></h4> </td>
-              <td><p>  </p> </td>
-              <td ><h5> 
-                Disfruto de aprender constantemente cosas nuevas y tratar de acompañar el cambio tecnologico.
-              </h5> </td>
-            </tr>
-            <tr >
-              <td > </td>
-              <td style="height:30px" > <h4></h4> </td>
-              <td><p>  </p> </td>
-              <td ><h5> 
-                Combino estos interes personales con la docencia e intento apasionar a mis alumnos en este entorno.
-              </h5> </td>
-            </tr>
-          </table>
+        <!--script>
+          function cambiar_parrafo();
+        </script>
+       
+          <div class=”boton-edit” onclick=”Cambair_parrafo()”>
+        </div>
+          
+      
+        <p> </p>
+          <p> <i class='	fas fa-pen' style='font-size:48px;color:black'></i></p-->
+        
+        <div style="position: relative; left: 0; top: 0;" class="myHeader">
+          <div style="float: right;" class="boton1">
+            <button class="redondo" >
+              <i class = "fas fa-pen"> </i >
+            </button>
+          </div>   
+          <img src="ciudad.png "  width=968px height=300px  class="rounded" >
+        </div>  
+        <div>
+         <img src="yo.png"  width=300 height=300  class="foto">
+         <div class="boton2">
+            <button class="redondo" >
+             <i class = "fas fa-pen"> </i >
+            </button>
+          </div>   
+      <div  class="my">
          
+            <div class="boton3" id="boton-editar">
+              <button class="redondo" >
+               <i class = "fas fa-pen"> </i >
+              </button>
+            </div>   
+          </table> 
+      
+      <!--presentacion-->
+      <div id="contenedor">
+        <div id="nombre">
+          <br>
+          <br>
+          <p><h4 >Maria Beatriz Aguirre</h4></p>
+          <p><h5>Full Stack Developer Jr</h5></p>
+        </div> 
+        <div id="datos2">
+          <br>
+          <br>
+          <p><h4> Presentación</h4></p>
+          <h6> 
+            <p> Desde muy joven siento fascinación por la tecnología, sus avances y sus aplicaciones.</p>
+            <p> Disfruto de aprender constantemente cosas nuevas y tratar de acompañar el cambio tecnologico.</p>
+            <p>  Combino estos interes personales con la docencia e intento apasionar a mis alumnos en este entorno.</p>
+          </h6>
         </div>
+        <div class="boton4" id="boton-editar">
+          <button class="redondo" >
+           <i class = "fas fa-pen"> </i >
+          </button>
+        </div>   
+        <div class="boton5" id="boton-cancelar">
+          <button class="redondo" >
+          <i class='	fa fa-times' ></i>
+        </button>
+        </div>
+      </div>
+     
+       
+  
+
         <div style="position: relative; left: 0; top: 0;" class="my">
           
-          
-              
           <p><h3>Experiencia laboral</h3> </p>
-              
-            <table>
-            <tr >
-              <th ></th> 
-              <th rowspan="3"><p>  <img src="poli.png"  width=200 height=180></p></th> 
-              
-            </tr>
-            <td style="width:30px"><p></p> </td>
-              <td ><p> <b>•	Desde 2018 profesora de Escuela Secundaria Especializada en Arte Nro. 1 </b> </p> 
-                <p>      Asignatura: Nticx (Nuevas Tecnologías de la información y la conectividad)</p> 
-              </td> 
-            <tr>
-              
-            <tr>
-              <td ><p></p> </td>
-              <td ><p></p> </td>  
-            </tr> 
-            <tr>
-              <td ><p></p> </td>
-              <td ><p></p> </td>  
-            </tr> 
-          <!--segundo trabajo-->
-          <tr><td> </td></tr>
-            <tr >
-              <th style="width:30px"></th> 
-              <th rowspan="3"><p>  <img src="tecnica2.png"  width=150 height=150></p></th> 
-             </tr>
-            <td style="width:30px"><p></p> </td>
-              <td ><p> <b>•	Desde 2018 profesora de Escuela de Enseñanza Secundaria Técnica Nro. 2</b> </p> 
-                <p>Asignatura: Laboratorio de Programación - 6to Año (Poo en c++)</p> </td> 
-            
-             
-             <tr>
-              <td ><p></p> </td>
-              <td ><p></p> </td>  
-            </tr> 
-            <tr>
-              <td ><p></p> </td>
-              <td ><p></p> </td>  
-            </tr> 
-             <!--tercer trabajo-->
-          <tr><td> </td></tr>
-          <tr >
-            <th style="width:30px"></th> 
-            <th rowspan="3"><p>  <img src="tecnica4.png"  width=150 height=150></p></th> 
-           </tr>
-          <td style="width:30px"><p></p> </td>
-            <td ><p> <b>•	Desde 2019 profesora de Escuela de Enseñanza Secundaria Técnica Nro. 4</b> </p> 
-            <p>Asignatura: Lenguajes Tecnológicos - 3er. Año</p> </td> 
           
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-           <!--cuarto trabajo-->
-          <tr><td> </td></tr>
-          <tr >
-            <th style="width:30px"></th> 
-            <th rowspan="3"><p>  <img src="quilmes.png"  width=150 height=150></p></th> 
-           </tr>
-          <td style="width:30px"><p></p> </td>
-            <td ><p> <b>•	Desde 2010 hasta marzo 2022 profesora del Instituto Secundario Quilmes</b> </p> 
-            <p>Asignatura: Nticx (Nuevas Tecnologías de la información y la conectividad)</p> </td> 
-          
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <!--quinto trabajo-->
-          <tr><td> </td></tr>
-          <tr >
-            <th style="width:30px"></th> 
-            <th rowspan="3"><p>  <img src="juven.png"  width=150 height=150></p></th> 
-           </tr>
-          <td style="width:30px"><p></p> </td>
-            <td ><p> <b>•	Desde 2001 hasta marzo 2020 profesora del Instituto Juvenilia</b> </p> 
-            <p>Asignaturas: Nticx (Nuevas Tecnologías de la información y la conectividad)</p>
-            <p>              Informática  Nivel Secundario </p>
-            <p>              Informática  Nivel Primario </p>
-            <p>              Coordinadora del área Tecnológica de la institución</p>
-           </td> 
-          
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-           
-          <!--sexto trabajo-->
-          <tr><td> </td></tr>
-          <tr >
-            <th style="width:30px"></th> 
-            <th rowspan="3"><p>  <img src="iac.png"  width=150 height=150></p></th> 
-           </tr>
-          <td style="width:30px"><p></p> </td>
-            <td ><p> <b>•	Desde 2001 hasta marzo 2006 profesora</b> </p> 
-            <p>Asignaturas: Docente cursos de informatica para docentes, adultos, adolescentes y niños</p>
-           </td> 
-          
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <!--septimo trabajo-->
-          <tr><td> </td></tr>
-          <tr >
-            <th style="width:30px"></th> 
-            <th rowspan="3"><p>  <img src="hilet.png"  width=150 height=150></p></th> 
-           </tr>
-          <td style="width:30px"><p></p> </td>
-            <td ><p> <b>•	Desde 1997 hasta marzo 2001 profesora</b> </p> 
-            <p>Asignaturas: Docente cursos de informatica para docentes, adultos, adolescentes y niños</p>
-           </td> 
-          
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-           <!--octavo trabajo-->
-           <tr><td> </td></tr>
-           <tr >
-             <th style="width:30px"></th> 
-             <th rowspan="3"><p>  Instituto Juan B. Justo</p></th> 
-            </tr>
-           <td style="width:30px"><p></p> </td>
-             <td ><p> <b>•	Desde 1990 hasta marzo 1995 profesora</b> </p> 
-              <p>  <Instituto Juan B. Justo></p>
-             <p>Asignaturas: Docente Nticx e informática Nivel inicial y primario</p>
-            </td> 
-           
-           <tr>
-             <td ><p></p> </td>
-             <td ><p></p> </td>  
-           </tr> 
-           <tr>
-             <td ><p></p> </td>
-             <td ><p></p> </td>  
-           </tr> 
-          </table>
-          
+             <!--primer trabajo--> 
+                <ul>
+                  <li> <img src="poli.png"  width=200 height=180>
+                   <p>	<b>Desde 2018 profesora de Escuela Secundaria Especializada en Arte Nro. 1 </b> </p>
+                   <p>Asignatura: Nticx (Nuevas Tecnologías de la información y la conectividad)</p><br>
+                  </li> 
+              <!--segundo trabajo-->
+                <li>  <img src="tecnica2.png"  width=150 height=150>
+                 <p> <b>Desde 2018 profesora de Escuela de Enseñanza Secundaria Técnica Nro. 2</b> </p> 
+                 <p>Asignatura: Laboratorio de Programación - 6to Año (Poo en c++)</p><br>
+                </li> 
+              <!--tercer trabajo-->
+               <li> <img src="tecnica4.png"  width=150 height=150>
+                 <p> <b>Desde 2019 profesora de Escuela de Enseñanza Secundaria Técnica Nro. 4</b> </p> 
+                 <p>Asignatura: Lenguajes Tecnológicos - 3er. Año</p> <br>
+               </li> 
+              <!--cuarto trabajo-->
+               <li><img src="quilmes.png"  width=150 height=150>
+                <p> <b>Desde 2010 hasta marzo 2022 profesora del Instituto Secundario Quilmes</b> </p> 
+                <p>Asignatura: Nticx (Nuevas Tecnologías de la información y la conectividad)</p> <br> 
+              </li> 
+              <!--quinto trabajo-->
+                <li><img src="juven.png"  width=150 height=150>
+                  <p> <b>Desde 2001 hasta marzo 2020 profesora del Instituto Juvenilia</b> </p> 
+                  <p>Asignaturas: Nticx (Nuevas Tecnologías de la información y la conectividad)</p>
+                  <p>              Informática  Nivel Secundario </p>
+                  <p>              Informática  Nivel Primario </p>
+                  <p>              Coordinadora del área Tecnológica de la institución</p><br>
+                </li> 
+              <!--sexto trabajo-->
+                 <li> <img src="iac.png"  width=150 height=150>
+                    <p> <b>Desde 2001 hasta marzo 2006 profesora</b> </p> 
+                    <p>Asignaturas: Docente cursos de informatica para docentes, adultos, adolescentes y niños</p><br>
+                  </li>
+              <!--septimo trabajo-->
+              <li><img src="hilet.png"  width=150 height=150>
+                <p> <b>Desde 1997 hasta marzo 2001 profesora</b> </p> 
+                <p>Asignaturas: Docente cursos de informatica para docentes, adultos, adolescentes y niños</p><br><br>
+              </li>
+             <!--octavo trabajo-->
+             <li><p>  <b>Instituto Juan B. Justo</b></p>
+              <p> <b>Desde 1990 hasta marzo 1995 profesora</b> </p> 
+              <p>Asignaturas: Docente Nticx e informática Nivel inicial y primario</p><br>
+             </li>
+            </ul>
       </div> 
 
       <div style="position: relative; left: 0; top: 0;" class="my">
-          
         <!--estudios-->   
-              
-        <p><h3>Formación académica</h3> </p>
-            
-          <table>
-          <tr >
-            <th ></th> 
-            <th rowspan="3"><p>  <img src="iac.png"  width=200 height=180></p></th> 
-            
-          </tr>
-          <td style="width:30px"><p></p> </td>
-            <td ><p> <b>•	 Título: Analista de Sistemas de Informacion</b></p> 
-              <p> Instituto Argentino de Computacion Superior</p> 
-                <p> Diegep nro 5458</p> 
+            <p><h3>Formación académica</h3> </p>
+            <ul>
+              <li>  <img src="iac.png"  width=200 height=180>
+                  <p> <b>Título: Analista de Sistemas de Informacion</b></p> 
+                  <p> Instituto Argentino de Computacion Superior</p> 
+                  <p> Diegep nro 5458</p> 
                   <p> Mar del Plata</p> 
-                    <p> Año de Egreso: 2000</p> 
-           </td> 
-          <tr>
-            
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
+                  <p> Año de Egreso: 2000</p> 
+              </li> 
         <!--segundo titulo-->
-        <tr><td> </td></tr>
-          <tr >
-            <th style="width:30px"></th> 
-            <th rowspan="3"><p>  <img src="iac.png"  width=150 height=150></p></th> 
-           </tr>
-          <td style="width:30px"><p></p> </td>
-            <td ><p> <b>•Título: Programador Superior	</b></p> 
-              <p> Instituto Argentino de Computacion Superior</p>
+              <li>  <img src="iac.png"  width=150 height=150>
+                <p> <b>Título: Programador Superior	</b></p> 
+                <p> Instituto Argentino de Computacion Superior</p>
                 <p> Diegep nro 5458</p>
-                  <p> Mar del Plata</p>
-                    <p> Año de Egreso: 1999
-            
-            </p> </td> 
-          
-           
-           <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-           <!--tercer titulo-->
-        <tr><td> </td></tr>
-        <tr >
-          <th style="width:30px"></th> 
-          <th rowspan="3"><p>  <img src="educar.png"  width=150 height=150></p></th> 
-         </tr>
-        <td style="width:30px"><p></p> </td>
-          <td ><p> <b>•	Postitulo en Educacion y Tic </b></p>
-            <p>  Educar – Ministerio de Educación – Presidencia de la Nación</p>
-              <p>  Años de Capacitación: 2012 a 2014</p>
+                <p> Mar del Plata</p>
+                <p> Año de Egreso: 1999 </p>
+              </li> 
+        <!--tercer titulo-->
+              <li>  <img src="educar.png"  width=150 height=150>
+                <p> <b>Postitulo en Educacion y Tic </b></p>
+                <p>  Educar – Ministerio de Educación – Presidencia de la Nación</p>
+                <p>  Años de Capacitación: 2012 a 2014</p>
                 <p>  Modalidad: capacitación semipresencial</p>
-                  <p>  Duración: 400  horas reloj entre julio de 2012 y Julio de 2014
-                  </p> </td> 
-        
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
-         <!--cuarto titulo-->
-        <tr><td> </td></tr>
-        <tr >
-          <th style="width:30px"></th> 
-          <th rowspan="3"><p>  <img src="pablovi.png"  width=150 height=150></p></th> 
-         </tr>
-        <td style="width:30px"><p></p> </td>
-          <td ><p> <b>•	Título: Capacitación Docente Nivel II</b> </p> 
-          <p>Instituto Superior de Formación Docente </p>
-          <p></p>  “Pablo VI” Diegep nro. 3438 </p>
-          <p>Mar del Plata </p>
-          <p>Año de Egreso: 1996
-         </p> </td> 
-        
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
-        <!--quinto titulo-->
-        <tr><td> </td></tr>
-        <tr >
-          <th style="width:30px"></th> 
-          <th rowspan="3"><p>  <img src="enet.png"  width=150 height=150></p></th> 
-         </tr>
-        <td style="width:30px"><p></p> </td>
-          <td ><p> <b>•	Título Secundario: Técnica Electrónica Nacional</b> </p> 
-          <p>Escuela Nacional de Educación Técnica Nro. 1          </p>
-          <p>          Domingo F. Sarmiento
-             </p>
-          <p>             14 de Julio 2550
-            </p>
-          <p>               Mar del Plata
-            </p>
-            <p>  Año de Egreso: 1989 </p>
-         </td> 
-        
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
-      </table>
-        
+                <p>  Duración: 400  horas reloj entre julio de 2012 y Julio de 2014 </p>
+              </li>
+       <!--cuarto titulo-->
+       <li> <img src="pablovi.png"  width=150 height=150>
+         <p> <b>Título: Capacitación Docente Nivel II</b> </p> 
+         <p>Instituto Superior de Formación Docente </p>
+         <p>  “Pablo VI” Diegep nro. 3438 </p>
+         <p>Mar del Plata </p>
+         <p>Año de Egreso: 1996</p>
+        </li>
+      <!--quinto titulo-->
+       <li>  <img src="enet.png"  width=150 height=150>
+         <p> <b>Título Secundario: Técnica Electrónica Nacional</b> </p> 
+         <p>Escuela Nacional de Educación Técnica Nro. 1          </p>
+         <p>          Domingo F. Sarmiento </p>
+         <p>             14 de Julio 2550 </p>
+         <p>               Mar del Plata </p>
+         <p>  Año de Egreso: 1989 </p>
+        </li>
+      </ul>
     </div> 
          
     <div style="position: relative; left: 0; top: 0;" class="my">
-          
       <!--cursos-->   
-            
       <p><h3>Otras capacitaciones</h3> </p>
-    <table>
+    <ul>
       <!--curso 1-->  
-        <tr><td> </td>
-        
-        <th style="width:30px"></th> 
-           
-      
-        <th><p><b> Curso: Operador de computador Nivel I</b> </p>
-          <p>Fundación Bolsa de Comercio de Mar del Plata
-            
-            </p>
+        <li><p><b> Curso: Operador de computador Nivel I</b> </p>
+          <p>Fundación Bolsa de Comercio de Mar del Plata</p>
           <p>Año de Capacitación: 1989</p>
-        </th></tr>
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
-        <tr>
-          <td ><p></p> </td>
-          <td ><p></p> </td>  
-        </tr> 
+        </li>
         <!--curso 1-->  
-        <tr><td> </td>
-        
-          <th style="width:30px"></th> 
-             
-        
-          <th><p><b> Seminario: Piaget y las nuevas tecnologías para la Educación</b> </p>
-            <p>Secretaría de Educación – Municipalidad de Gral. Pueyrredón
-             
-              
-              </p>
+        <li><p><b> Seminario: Piaget y las nuevas tecnologías para la Educación</b> </p>
+            <p>Secretaría de Educación - Municipalidad de Gral. Pueyrredón</p>
             <p> Año de Capacitación: 1992</p>
-          </th></tr>
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-          <tr>
-            <td ><p></p> </td>
-            <td ><p></p> </td>  
-          </tr> 
-     
-        </table>
+          </li>
+    </ul>
     </div> 
     </body>
 </html>
